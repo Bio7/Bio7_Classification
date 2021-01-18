@@ -67,7 +67,9 @@ import ij.process.ColorSpaceConverter;
 import ij.process.FloatProcessor;
 import ij.process.ImageConverter;
 import ij.process.ImageProcessor;
-
+/*
+ * A Bio7 Graphical User Interface for supervised and unsupervised classification.
+ */
 public class Main extends com.eco.bio7.compile.Model {
 
 	private String[] files;
