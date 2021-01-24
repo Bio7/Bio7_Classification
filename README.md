@@ -72,7 +72,7 @@ to import images with an ImageJ macro (e.g. Landsat 8 images, see ImageJ macro e
 For convenience images and stored ROI Manager files can be dropped on the ImageJ-Canvas view to open them. In addition a saved R workspace file can be opened, too, by
 dropping it on the main toolbar of Bio7. Finally a stored GUI configuration file can be opened by dropping it directly on the classification GUI.
 
-##Development
+## Development
 
 You can download, change and customize the source with GIT.
 
