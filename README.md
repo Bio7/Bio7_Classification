@@ -28,9 +28,7 @@ Classification preview from a selection:
 
 [![Alt text](https://img.youtube.com/vi/ImY6ZlFfy-Q/0.jpg)](https://youtu.be/ImY6ZlFfy-Q)
 
-#### Documentation:
-
-Open and compile the 'Main.java' class dynamically (use the 'Compile Java' action in the Bio7 main toolbar).
+### Documentation:
 
 ##### Features Tab:
 
@@ -73,6 +71,17 @@ to import images with an ImageJ macro (e.g. Landsat 8 images, see ImageJ macro e
 
 For convenience images and stored ROI Manager files can be dropped on the ImageJ-Canvas view to open them. In addition a saved R workspace file can be opened, too, by
 dropping it on the main toolbar of Bio7. Finally a stored GUI configuration file can be opened by dropping it directly on the classification GUI.
+
+##Development
+
+You can download, change and customize the source with GIT.
+
+To compile the plugin open the 'Main.java' class and compile it dynamically (use the 'Compile Java' action in the Bio7 main toolbar). The dependent classes will be compiled, too.
+
+The 'ModelGui' SWT graphical view interface can be modified or extended with the [Eclipse WindowBuilder plugin](https://marketplace.eclipse.org/content/windowbuilder) (SWT) if installed in Bio7.
+The Main.java class can be extended with further filters or default features. 
+
+The default R scripts and the ImageJ import macro can be changed with the R and ImageJ macro Bio7 editors.
 
 ## RAM Usage Settings for Big Images
  
@@ -119,13 +128,6 @@ Using the Bio-Formats library with the ImageJ macro (enable the option 'Use Imag
 The library has to be installed first as an ImageJ plugin.
 Bio-Formats GUI import commands can be recorded with the ImageJ macro recorder for use in the available project macro for, e.g., a specific import.
 If the library is used the loaded image is opened by default (can't be avoided in a macro - simply close the image after display).
-
-## Customization
-
-The 'ModelGui' graphical view interface can be modified or extended with the [Eclipse WindowBuilder plugin](https://marketplace.eclipse.org/content/windowbuilder) (SWT) if installed in Bio7.
-The Main.java class can be extended with further filters or default features. To store or load settings of the GUI edit the Settings.java file.
-
-The default R scripts and the ImageJ import macro can be changed with the default Bio7 editors.
 
 ## External Java Libraries
 
