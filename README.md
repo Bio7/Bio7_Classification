@@ -131,7 +131,7 @@ If the library is used the loaded image is opened by default (can't be avoided i
 
 ## External Java Libraries
 
-The plugin uses at the moment two external Java libraries which will be installed with the Java CV plugin:
+The plugin uses at the moment two external Java libraries:
 
 [BoofCV](https://boofcv.org)
 
