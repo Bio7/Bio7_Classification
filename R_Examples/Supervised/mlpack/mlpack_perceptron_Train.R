@@ -4,7 +4,6 @@
 # R package: https://cran.r-project.org/web/packages/mlpack/index.html
 # Website R Documentation: https://www.mlpack.org/doc/stable/r_documentation.html
 # Hoover this editor links then STRG+Mouseclick to open the Links in the default Browser!
-
 library(mlpack)
 
 dftrain <- NULL
@@ -18,7 +17,7 @@ trainData <- dftrain[, -1]
 # Extract the labels (classes)
 labelForData <- as.matrix(dftrain[, 1])
 # Train a random forest.
-output <- random_forest(training = trainData, labels = labelForData, print_training_accuracy = TRUE, 
-    num_trees = 50, minimum_leaf_size = 3, verbose = TRUE)
+output <- perceptron(training = trainData, labels = labelForData)
 rf_model <- output$output_model
 print(rf_model)
+
