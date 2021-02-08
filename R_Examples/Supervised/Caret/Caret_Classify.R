@@ -1,4 +1,7 @@
-# Classify using the caret package!
+# Using the caret package. Nice examples and for a reproducible model can be found here (CTRL+CLick to open link!):
+# https://topepo.github.io/caret/
+# https://zia207.github.io/geospatial-r-github.io/supervised-classification.html
+# https://stackoverflow.com/questions/13403427/fully-reproducible-parallel-models-using-caret
 library(caret)
 # Check if trained model is available for classifcation!
 if (exists("rf_model")) {
