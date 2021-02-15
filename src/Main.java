@@ -67,6 +67,7 @@ import ij.process.ColorSpaceConverter;
 import ij.process.FloatProcessor;
 import ij.process.ImageConverter;
 import ij.process.ImageProcessor;
+
 /*
  * A Bio7 Graphical User Interface for supervised and unsupervised classification.
  */
@@ -330,11 +331,13 @@ public class Main extends com.eco.bio7.compile.Model {
 		if (path.endsWith(".R")) {
 			evalRScript(path);
 			// imageFromR(3, "imageMatrix", 1);
-			ImagePlus imageClassified = ImageToRTransfer.imageFromR("imageMatrix");
-			if (imageClassified != null) {
-				imageClassified.setTitle(name + "_Classified");
-				imageClassified.show();
-				gui.layout();
+			if (gui.showClassifiedInImageJ) {
+				ImagePlus imageClassified = ImageToRTransfer.imageFromR("imageMatrix");
+				if (imageClassified != null) {
+					imageClassified.setTitle(name + "_Classified");
+					imageClassified.show();
+					gui.layout();
+				}
 			}
 		}
 
@@ -1126,7 +1129,7 @@ public class Main extends com.eco.bio7.compile.Model {
 			for (int i = 0; i < listen.size(); i++) {
 				RoiListener rl = (RoiListener) listen.get(i);
 				String className = rl.getClass().getName().toString();
-				 System.out.println(className);
+				System.out.println(className);
 				if (className.equals("_ModelGui")) {
 					Roi.removeRoiListener(rl);
 					IJ.run("Remove Overlay", "");
