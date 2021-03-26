@@ -74,7 +74,7 @@ import ij.process.ImageProcessor;
 public class Main extends com.eco.bio7.compile.Model {
 
 	private String[] files;
-	private _ModelGui gui;
+	private _ModelGui gui; 
 	protected int transferType;
 	protected String currentFilePathMultipleDialog;
 	protected IProgressMonitor actionMonitor;
