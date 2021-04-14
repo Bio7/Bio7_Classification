@@ -55,12 +55,17 @@ In addition the data transfer type to R can be selected (whereat most filters re
 It is also possible to open the default hidden feature stack which will be transfered to R (option 'Open Feature Stack')
 and transfer signatures according to the group membership of the ROI (option 'Use Group Signature').
 
+With the "Create Classification Project" action a classification Bio7 project can be created with a selectable folder structure.
+The default R templates can be copied to the new project location for custom scripts (paths have to be adjusted and stored in a configuration file!).
+
 If the 'Selection Preview (Train)' option is enabled a classification overlay will be generated on top of the source image with size and location
 of the selection. A retraining of the dataset for the preview can be enabled if the 'Retrain for Preview' option is selected. The ROI overlay will be updated
 dynamically if you change or move the ROI selection. Please disable the preview option (a ROI listener) or close the GUI if you recompile the plugin!
+The preferred LUT and opacity can be selected, too.
 
-With the "Create Classification Project" action a classification Bio7 project can be created with a selectable folder structure.
-The default R templates can be copied to the new project location for custom scripts (paths have to be adjusted and stored in a configuration file!).
+The enabled option "Show in ImageJ" transfers the data back to ImageJ and can be disabled if the classification result should be stored with the R scripts.
+
+With the option "Apply ImageJ Macro" the classified image can be post-processed with an ImageJ macro, e.g., to extract and measure particles or identify image objects.
 
 ##### Supported Images:
 
