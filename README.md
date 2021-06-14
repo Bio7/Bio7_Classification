@@ -110,12 +110,12 @@ The Java runtime is able to optimize memory on demand and return occupied memory
 side in the classification process (open and transfer to R) by default is closed. If the memory settings of Java in Bio7 (see Bio7.ini file) are adjusted accordingly most
 of the memory can be returned to the OS and thus to R and the memory intensive classification process.
 
-Windows and Linux:
+#### Windows and Linux:
 
 For an increased Java heap space open the Bio7.ini file in the install directory of Bio7. In the file you can change the default memory settings e.g. 
 the initial heap size -Xms and the maximum heap space -Xmx.
 
-MacOSX:
+#### MacOSX:
 
 For an increased Java heap space open the Bio7 package (context menu if you click on the icon) then go to Contents->MacOS and open the Bio7.ini file 
 with a texteditor. In the file you can change the default memory settings e.g. the initial heap size -Xms and the maximum heap space -Xmx.
