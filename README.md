@@ -1,6 +1,6 @@
 # Bio7 Image Classification
 
-### A repository for a Bio7 Graphical User Interface for supervised and unsupervised image classification which can be extended easily.
+### A repository for a Graphical User Interface for supervised and unsupervised image classification for Bio7 which can be extended easily.
 
 ## Start
 
