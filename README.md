@@ -4,7 +4,7 @@
 
 ## Start
 
-The classification plugin and dependencies are shipped with Bio7 3.2.
+The classification plugin and dependencies are shipped since Bio7 3.2.
 The plugin can be started in the R-Shell view context menu ("Image Classification->Main").
 
 You can also use this repository (with the [Eclipse EGit plugin](https://marketplace.eclipse.org/content/egit-git-integration-eclipse) - available in the Update Manager of Bio7) 
