@@ -2,7 +2,7 @@
 
 ### A repository for a Graphical User Interface for supervised and unsupervised image classification for Bio7 which can be extended easily.
 
-## Start
+## Start 
 
 The classification plugin and dependencies are shipped since Bio7 3.2.
 The plugin can be started in the R-Shell view context menu ("Image Classification->Main").
