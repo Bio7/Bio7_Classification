@@ -16,7 +16,7 @@ ImageJ updates are available via an Update Site (Menu: "Help->Install New Softwa
 default available in the Update Manager since Bio7 3.2.
 
 At first start the plugin is compiled to Java classfiles (*.class). 
-To recompile for distribution (updates, changes) just delete all classfiles in the plugin install directory and subdirectories!
+For distribution just copy all new sources in the plugin install directory (delete the old plugins *.java and *.class files)!
 
 The Graphical User Interface was created with the [Eclipse Window Builder](https://github.com/eclipse-windowbuilder/windowbuilder)
 which can be installed into Bio7. Open the file _ModelGui.java with WindowBuilder to edit or customize the GUI.
