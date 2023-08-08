@@ -7,6 +7,8 @@
 The classification plugin and dependencies are shipped since Bio7 3.2.
 The plugin can be started in the R-Shell view context menu ("Image Classification->Main").
 
+## Customize
+
 You can also use this repository (with the [Eclipse EGit plugin](https://marketplace.eclipse.org/content/egit-git-integration-eclipse) - available in the Update Manager of Bio7) 
 to download, compile and start the latest version of this plugin.
 
@@ -14,7 +16,10 @@ ImageJ updates are available via an Update Site (Menu: "Help->Install New Softwa
 default available in the Update Manager since Bio7 3.2.
 
 At first start the plugin is compiled to Java classfiles (*.class). 
-To recompile (updates, changes) just delete all classfiles in the plugin install directory and subdirectories.
+To recompile for distribution (updates, changes) just delete all classfiles in the plugin install directory and subdirectories!
+
+The Graphical User Interface was created with the [https://github.com/eclipse-windowbuilder/windowbuilder](Eclipse Window Builder)
+which can be installed into Bio7. Open the file _ModelGui.java with WindowBuilder to edit or customize the GUI.
 
 ## Usage
 
